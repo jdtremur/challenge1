@@ -18,31 +18,42 @@
                     <p>Solo letras minúsculas y sin acentos</p>
                 </div>
             </section>
-            <section class="textoInicio">
-                <label>Ingrese el texto aqui</label>
-            </section>
-            <section class="botones">
-                <div>
-                    <input type="submit" name="encriptar" value="Encriptar" class="encriptar">
-                </div>
-                <div>
-                    <input type="submit" name="encriptar" value="Desencriptar" class="desencriptar">
-                </div>
+            <section>
+                <form>
+                    <div class="textoInicio" >
+                        <div class="texto">
+                            <textarea type="text" placeholder="Ingrese el texto aqui" id="mensajeEscrito" ></textarea>
+                        </div>   
+                    </div>
+                    <fieldset class="botones">
+                        <div>
+                            <input type="button" value="Encriptar" class="encriptar" onclick="leerT
+                            exto();">
+                        </div>
+                        <div>
+                            <input type="button" value="Desencriptar" class="desencriptar">
+                        </div>
+                    </fieldset>
+                </form>
             </section>  
         </main>
         <footer class="rectanguloAviso">
             <img src="Muñeco.png" alt="logo de aviso de mensaje no encontrado" class="muñeco">
             <section class="mostrarMensaje">
+                <div class="testoEncriptado">
+                    <textarea type="text" id="resultado" ></textarea>
+                </div>
                 <div  class="mensajeNoEncontrado">
                     <p>Ningún mensaje fue encontrado</p>
                 </div>
                 <div class="mensajeAviso">
                     <p>Ingrese el texto que desees encriptar o desencriptar</p>
                 </div>
+                <div class="botonCopiar">
+                    <input type="button" value="Copiar" class="Copiar">
+                </div>
             </section>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
-<script>
-
-</script>

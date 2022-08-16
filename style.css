@@ -16,19 +16,24 @@ header{
     left: 40px;
     top: 40px;
 }
-.textoInicio{
+.textoInicio textarea{
     position: absolute;
     width: 577px;
-    height: 48px;
+    height: 288px;
     left: 240px;
     top: 168px;
+    border: none;
+    background: #F3F5FC;
 }
-.textoInicio label{
+textarea{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
+    color: #0A3871;
+}
+::placeholder{
     color: #0A3871;
 }
 .advertencia{
@@ -69,6 +74,11 @@ header{
     height: 67px;
     left: 240px;
     top: 885px;
+    border: none;
+}
+.botones :hover{
+    color: #d29f5f;
+    transform: scale(1.05);
 }
 .botones .encriptar{
     padding: 24px;
@@ -86,6 +96,7 @@ header{
     line-height: 19px;
     text-align: center;
     color: #ffffff;
+    cursor: pointer;
 }
 .botones .desencriptar{
     box-sizing: border-box;
@@ -104,6 +115,7 @@ header{
     line-height: 19px;
     text-align: center;
     color: #0A3871;
+    cursor: pointer;
 
 }
 .rectanguloAviso{
@@ -146,6 +158,39 @@ header{
     text-align: center;
     color: #343A40;
 }
+
+.testoEncriptado{
+    display: block;
+}
+.mostrarMensaje .botonCopiar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px; 
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    top: 225px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+.Copiar{
+    width: 288px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    border: none;
+}
+.botonCopiar:hover{
+    transform: scale(1.05);
+}
 .mostrarMensaje .mensajeAviso p{   
     width: 336px;
     height: 48px;
@@ -155,4 +200,3 @@ header{
     text-align: center;
     color: #495057;
 }
-
