@@ -3,13 +3,14 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
         <title>Encriptador Alura</title>
         <link rel="stylesheet" href="style.css">
         
     </head>
-    <body>
+    <body id="body">
         <header>
-            <h1><img src="Vector.png" alt="logo Alura" class="LogoAlura"></h1>
+            <h1><img src="Vector.png" alt="logo Alura" ></h1>
         </header>
         <main>
             <section>
@@ -36,7 +37,7 @@
                 </form>
             </section>  
         </main>
-        <footer class="rectanguloAviso">
+        <footer class="rectanguloAviso" id="rect">
             <img src="Muñeco.png" alt="logo de aviso de mensaje no encontrado" class="muñeco" id="img">
             <section class="mostrarMensaje">
                 <div  class="mensajeNoEncontrado" id="aviso1">
@@ -46,7 +47,7 @@
                     <p>Ingrese el texto que desees encriptar o desencriptar</p>
                 </div>
                 <form>
-                        <div class="testoEncriptado" id="mensajeEncontrado">
+                        <div class="textoEncriptado" id="mensajeEncontrado">
                             <textarea type="text" id="resultado" ></textarea>
                         </div>
                         <div id="boton3" class="botonCopiar">

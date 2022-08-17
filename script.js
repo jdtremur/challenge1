@@ -27,6 +27,10 @@ function encriptar(){
         else{
           
          }
+         if(document.getElementsByName('viewport')){
+            document.getElementById('body').style.height = '1384px';
+            document.getElementById('rect').style.height = '343px';
+        }
     }     
 }
 
@@ -48,31 +52,57 @@ function Desencriptar(){
             document.getElementById('aviso2').style.display = 'none';
             document.getElementById('boton3').style.display = 'block';
             document.getElementById('mensajeEncontrado').style.display = 'block';
+            if(document.getElementsByName('viewport')){
+                document.getElementById('rect').style.height = '343px';
+                console.log("hola");
+            }
         }  
         else{
           
          }
+         if(document.getElementsByName('viewport')){
+            document.getElementById('body').style.height = '1384px';
+            document.getElementById('rectanguloAviso').style.height = '343px';
+        }
     }   
 }
  function borrar(){
     textareaResultado.value="";
     textareaMesaje.focus();
     textareaMesaje.value="";
-    document.getElementById('img').style.display = 'block';
     document.getElementById('aviso1').style.display = 'block';
     document.getElementById('aviso2').style.display = 'block';
     document.getElementById('boton3').style.display = 'none';
     document.getElementById('mensajeEncontrado').style.display = 'none';
+    if(document.getElementsByName('viewport')){
+        document.getElementById('img').style.display = 'none';
+    }
+    else{
+        document.getElementById('img').style.display = 'block';
+    }
+    if(document.getElementsByName('viewport')){
+        document.getElementById('body').style.height = '1174px';
+        document.getElementById('rect').style.height = '133px';
+    }
  }
 
 function copiar(){
     var mensajeEncriptado = textareaResultado.value
     navigator.clipboard.writeText(mensajeEncriptado);
-    document.getElementById('img').style.display = 'block';
     document.getElementById('aviso1').style.display = 'block';
     document.getElementById('aviso2').style.display = 'block';
     document.getElementById('boton3').style.display = 'none';
     document.getElementById('mensajeEncontrado').style.display = 'none';
+    if(document.getElementsByName('viewport')){
+        document.getElementById('img').style.display = 'none';
+    }
+    else{
+        document.getElementById('img').style.display = 'block';
+    }
+    if(document.getElementsByName('viewport')){
+        document.getElementById('body').style.height = '1174px';
+        document.getElementById('rect').style.height = '133px';
+    }
 }
 inputEncriptar.onclick = encriptar;
 inputDesEncriptar.onclick = Desencriptar;
