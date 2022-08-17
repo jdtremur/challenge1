@@ -27,8 +27,7 @@
                     </div>
                     <fieldset class="botones">
                         <div>
-                            <input type="button" value="Encriptar" class="encriptar" onclick="leerT
-                            exto();">
+                            <input type="button" value="Encriptar" class="encriptar" onclick="leerTexto();">
                         </div>
                         <div>
                             <input type="button" value="Desencriptar" class="desencriptar">
@@ -38,20 +37,22 @@
             </section>  
         </main>
         <footer class="rectanguloAviso">
-            <img src="Muñeco.png" alt="logo de aviso de mensaje no encontrado" class="muñeco">
+            <img src="Muñeco.png" alt="logo de aviso de mensaje no encontrado" class="muñeco" id="img">
             <section class="mostrarMensaje">
-                <div class="testoEncriptado">
-                    <textarea type="text" id="resultado" ></textarea>
-                </div>
-                <div  class="mensajeNoEncontrado">
+                <div  class="mensajeNoEncontrado" id="aviso1">
                     <p>Ningún mensaje fue encontrado</p>
                 </div>
-                <div class="mensajeAviso">
+                <div class="mensajeAviso" id="aviso2">
                     <p>Ingrese el texto que desees encriptar o desencriptar</p>
                 </div>
-                <div class="botonCopiar">
-                    <input type="button" value="Copiar" class="Copiar">
-                </div>
+                <form>
+                        <div class="testoEncriptado" id="mensajeEncontrado">
+                            <textarea type="text" id="resultado" ></textarea>
+                        </div>
+                        <div id="boton3" class="botonCopiar">
+                            <input type="button" value="Copiar" class="Copiar">
+                        </div>
+                </form>
             </section>
         </footer>
         <script src="script.js"></script>

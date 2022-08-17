@@ -25,14 +25,6 @@ header{
     border: none;
     background: #F3F5FC;
 }
-textarea{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    color: #0A3871;
-}
 ::placeholder{
     color: #0A3871;
 }
@@ -160,37 +152,48 @@ textarea{
 }
 
 .testoEncriptado{
-    display: block;
-}
-.mostrarMensaje .botonCopiar{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px; 
     position: absolute;
-    width: 336px;
-    height: 67px;
-    top: 225px;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
+    top: -549px;
+    display: none;
+
 }
+textarea{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    width: 336px;
+    height: 390.5px;
+    border: none;
+}
+.Copiar:hover{
+    transform: scale(1.05);
+    color: #d29f5f;
+    
+}
+form .botonCopiar{
+    position: absolute;
+    top: 225px;
+    display: none;
+}
+
 .Copiar{
-    width: 288px;
+    width: 336px;
     height: 19px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 8px;
     text-align: center;
     color: #0A3871;
-    border: none;
+    border-radius: 24px;
+    border: 1px solid;
+    padding: 32px;
 }
-.botonCopiar:hover{
-    transform: scale(1.05);
-}
+
 .mostrarMensaje .mensajeAviso p{   
     width: 336px;
     height: 48px;
